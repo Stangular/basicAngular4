@@ -1,0 +1,12 @@
+﻿<form #projectform="ngForm" novalidate>
+    <mat-card>
+        <!--<mat-form-field class="example-full-width">
+            <input matInput placeholder="Favorite food" value="Sushi">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Leave a comment"></textarea>
+        </mat-form-field>-->
+        <input-edit [element]="getElement('name')" [form]='form'></input-edit>
+    </mat-card>
+</form>

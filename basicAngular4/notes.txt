@@ -1,0 +1,8 @@
+﻿HtmlWebpackPlugin npm install html-webpack-plugin --save-dev
+
+https://material.angular.io/guide/getting-started
+   npm install --save @angular/material @angular/cdk
+   npm install --save @angular/animations
+
+
+   had to change to "rxjs": "^5.5.2" to get build to work.

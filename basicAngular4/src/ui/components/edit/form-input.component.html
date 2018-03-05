@@ -1,0 +1,19 @@
+﻿<div [formGroup]="form" class="form-group" [class.has-error]="!isValid">
+    <!--<div class="row">
+        <div class="col-lg-10">
+            <label [attr.for]="element.FieldID()" class="control-label">{{element.Label()}}</label>
+        </div>
+        <div class="col-lg-1" (click)="onAction($event.target)">
+            <i [className]="actionClass"></i>
+        </div>
+    </div>-->
+    <mat-form-field>
+        <input matInput
+               [formControlName]="element.FieldID()"
+               [id]="element.FieldID()"
+               [placeholder]="element.Label()"
+               type="text"
+               class="form-control"
+               [value]="element.CurrentValue()" />
+    </mat-form-field>
+</div>

@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\appProject\modules\project.module.ts" />
+    <None Remove="src\appProject\services\project\project.model.ts" />
+    <None Remove="src\appProject\services\project\project.service.ts" />
+    <None Remove="src\app\navigation\navmenu.component.ts" />
+    <None Remove="src\dataManagement\model\data\dataitem.ts" />
+    <None Remove="src\dataManagement\model\elementDefinition.ts" />
+    <None Remove="src\dataManagement\model\form\form.ts" />
+    <None Remove="src\dataManagement\model\list\list.ts" />
+    <None Remove="src\dataManagement\model\list\listfactory.ts" />
+    <None Remove="src\dataManagement\model\list\ListNavigator.ts" />
+    <None Remove="src\dataManagement\model\records.ts" />
+    <None Remove="src\dataManagement\model\validation.ts" />
+    <None Remove="src\appProject\components\project.component.ts" />
+    <None Remove="src\dataManagement\service\dataHTTP.service.ts" />
+    <None Remove="src\dataManagement\service\elementDefinitionFactoryService.ts" />
+    <None Remove="src\ui\components\edit\form-input.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\appProject\routes\guards\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\appProject\modules\project.module.ts" />
+    <TypeScriptCompile Include="src\appProject\routes\project.route.ts" />
+    <TypeScriptCompile Include="src\appProject\services\project\project.model.ts" />
+    <TypeScriptCompile Include="src\appProject\services\project\project.service.ts" />
+    <TypeScriptCompile Include="src\app\navigation\navmenu.component.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\data\dataitem.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\field.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\form\form.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\list\list.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\list\listfactory.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\list\listNavigator.ts" />
+    <TypeScriptCompile Include="src\dataManagement\model\records.ts" />
+    <TypeScriptCompile Include="src\appProject\components\project.component.ts" />
+    <TypeScriptCompile Include="src\dataManagement\service\dataHTTP.service.ts" />
+    <TypeScriptCompile Include="src\dataManagement\service\elementDefinitionFactoryService.ts" />
+    <TypeScriptCompile Include="src\ui\components\edit\form-input.component.ts" />
+  </ItemGroup>
+
+</Project>
